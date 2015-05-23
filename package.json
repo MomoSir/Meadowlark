@@ -1,0 +1,12 @@
+{
+  "name": "Meadowlark",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "body-parser": "1.x",
+    "express": "^4.12.4",
+    "express-handlebars": "^2.0.1",
+    "mongoose": "^4.0.3"
+  },
+  "description": "This is a project that follow the book named Meadowlark"
+}
