@@ -47,6 +47,23 @@ app.get('/about', function(req, res){
 	res.render('about',{fortune: fortune.getFortune()});
 	// 缓存位置，再次更新
 })
+// 订阅
+app.get('/newsletter', function(req, res){
+	res.render('newsletter',{csrf: "CSRF token goes here"});
+})
+app.post('/process', function(req, res){
+	console.log('Name: ' + req.body.name || '');
+	console.log('Email: ' + req.body.email || '');
+	console.log('CSRF: ' + req.body._csrf || '');
+	if (req.xhr || req.accepts('json,html') === 'json') {
+		res.json({success: true});
+	} else {
+		res.redirect(303, '/thank-you');
+	};
+})
+app.get('/thank-you', function(req, res){
+	res.render('thank-you');
+})
 
 
 
