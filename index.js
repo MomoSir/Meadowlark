@@ -63,19 +63,7 @@ app.post('/process', function(req, res){
 })
 app.get('/thank-you', function(req, res){
 	res.render('thank-you');
-})
-
-
-
-
-
-
-
-
-
-
-
-
+});
 
 
 // 404 catch-all handler (middleware)
