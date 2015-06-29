@@ -8,5 +8,11 @@
     "express-handlebars": "^2.0.1",
     "mongoose": "^4.0.3"
   },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-concurrent": "^1.0.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-nodemon": "^0.3.0"
+  },
   "description": "This is a project that follow the book named Meadowlark"
 }
