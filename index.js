@@ -18,7 +18,6 @@ app.engine('.hbs', handlebars({defaultLayout: 'main', extname: '.hbs'}));
 app.set('view engine', '.hbs');
 
 
-
 // database configuration
 // var mongoose = require('mongoose');
 // var options = {
